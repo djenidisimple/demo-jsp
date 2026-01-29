@@ -1,0 +1,98 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url(./asseat/background.jfif);
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+}
+
+.center {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 857px) {
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .form-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
